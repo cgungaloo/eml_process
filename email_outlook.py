@@ -9,7 +9,7 @@ def send_email(subject, body, sender, recipients, password, cc,original_xml):
     msg['Subject'] = subject
     msg['From'] = sender
     msg['To'] = ', '.join(recipients)
-    msg['Cc'] = ', '.join(recipients)
+    msg['Cc'] = ', '.join(cc)
 
     msg.attach(MIMEText(body))
 
