@@ -1,0 +1,1 @@
+Import-CSV "powershell/upload_users_group.csv" | Add-JCUserGroupMember
